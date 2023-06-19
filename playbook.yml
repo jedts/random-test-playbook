@@ -1,6 +1,6 @@
 ---
 - name: Testing Playbook
-  hosts: your_ubuntu_hosts
+  hosts: all
   gather_facts: yes
   become: yes
 
