@@ -1,0 +1,10 @@
+---
+- hosts: 192.168.100.180
+  tasks:
+    - name: Read variable from stats
+      set_fact:
+        my_variable: "{{ hostvars['192.168.100.162']['ansible_facts']['ansible_statistics']['my_variable'] }}"
+
+    - name: Display variable
+      debug:
+        var: my_variable
