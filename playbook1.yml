@@ -1,5 +1,5 @@
 ---
-- hosts: 192.168.100.213
+- hosts: 192.168.100.165
   tasks:
     - name: Generate variable
       set_fact:
