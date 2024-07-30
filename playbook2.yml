@@ -1,5 +1,5 @@
 ---
-- hosts: 192.168.100.226
+- hosts: all
   tasks:
     - name: Read variable from stats
       debug:
